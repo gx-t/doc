@@ -1,0 +1,6 @@
+net usershare add share_name /home/user/somefolder "Share description" everyone:F guest_ok=y
+net usershare info --long share_name > /var/lib/samba/usershares/share_name
+net usershare delete share_name
+net usershare info
+net usershare list
+

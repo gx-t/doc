@@ -9,3 +9,7 @@ avconv -i "/tmp/%08d.jpeg" -s 1920x1080 -c:v libx264 out.mkv
 
 Many mp4s to single 30fps:
 ls -tr /tmp/*.MP4 | while read ff; do avconv -i "$ff" -s 1280x720 -vcodec rawvideo -r 30 -f avi -; done | avconv -i - out.mkv
+
+Cut from ... to ...
+avconv -i input.mkv -ss $(( $(date +%s -d 1:53:42) - $(date +%s -d 00:00:00) )) -acodec copy -vcodec copy -f matroska - | avconv -i - -t $(( $(date +%s -d 2:12:54) - $(date +%s -d 1:53:42) )) -acodec copy -vcodec copy -y .test2.mkv
+

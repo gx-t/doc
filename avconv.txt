@@ -1,15 +1,15 @@
-Slow down 10 times:
+==SLOW DOWN 10 TIMES
 avconv -i GOPR7570.MP4 -t 10 -filter_complex "[0:v]setpts=10*PTS[v]" -map "[v]" /tmp/test.mp4
 
-Convert vid. codec, size, copy 2 audio tracks send to stdout:
+==Convert vid. codec, size, copy 2 audio tracks send to stdout:
 avconv -i input.ts -map 0:0 -c:v libx264 -map 0:1 -c:a copy -map 0:2 -c:a copy -f matroska -s 1280x720 - 
 
-JPEGs to video:
+==JPEGs to video:
 avconv -i "/tmp/%08d.jpeg" -s 1920x1080 -c:v libx264 out.mkv
 
-Many mp4s to single 30fps:
+==Multiple mp4s to single 30fps:
 ls -tr /tmp/*.MP4 | while read ff; do avconv -i "$ff" -s 1280x720 -vcodec rawvideo -r 30 -f avi -; done | avconv -i - out.mkv
 
-Cut from ... to ...
+==Copy length from position
 avconv -i input.mkv -ss $(( $(date +%s -d 1:53:42) - $(date +%s -d 00:00:00) )) -acodec copy -vcodec copy -f matroska - | avconv -i - -t $(( $(date +%s -d 2:12:54) - $(date +%s -d 1:53:42) )) -acodec copy -vcodec copy -y .test2.mkv
 

@@ -1,0 +1,16 @@
+RTL2832 - DVB, DAB, FM, SDR
+http://sdr.osmocom.org/trac/wiki/rtl-sdr
+sudo apt-get install libusb-1.0-0-dev
+git clone git://git.osmocom.org/rtl-sdr.git
+cd rtl-sdr/
+mkdir build
+cd build
+cmake ../
+make
+sudo make install
+sudo ldconfig
+sudo rmmod dvb_usb_rtl28xxu rtl2832
+rtl_fm -f 105.5M -W -s 200000 -r 48000 - | aplay -r 48k -f S16_LE
+http://kmkeen.com/rtl-demod-guide/
+http://www.linuxtv.org/wiki/index.php/Testing_your_DVB_device
+

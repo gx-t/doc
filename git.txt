@@ -1,6 +1,12 @@
-====
-MERGING
-git config merge.tool vimdiff
-git config merge.conflictstyle diff3
-git config mergetool.prompt false
+==== MERGING
+git config --global merge.tool vimdiff
+git config --global merge.conflictstyle diff3
+git config --global mergetool.prompt false
+
+=== EDITOR
+git config --global core.editor vim
+
+===DELETE BRANCH
+git branch -d tmp
+git push origin --delete tmp
 

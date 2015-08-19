@@ -14,3 +14,5 @@ rtl_fm -f 105.5M -W -s 200000 -r 48000 - | aplay -r 48k -f S16_LE
 http://kmkeen.com/rtl-demod-guide/
 http://www.linuxtv.org/wiki/index.php/Testing_your_DVB_device
 
+===Scan for DVB-t channels, output in VLC format
+w_scan -cAM -ft -L > /tmp/chann.xspf

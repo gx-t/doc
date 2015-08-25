@@ -1,5 +1,3 @@
-*Mark edit points*
-```bash
+===MARK EDIT POINTS (save in file)
 mplayer -edlout test.edl test.ts
-```
 Press 'i' to mark. Can mark when paused.

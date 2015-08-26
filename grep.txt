@@ -1,0 +1,2 @@
+show line number: -n
+grep -Rn word . --include=glob

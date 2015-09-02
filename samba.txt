@@ -2,6 +2,9 @@
 WINDOWS SHARE FROM COMMAND LINE (NO NEED TO BE ROOT)
 net usershare add share_name /home/user/somefolder "Share description" everyone:F guest_ok=y
 net usershare info --long share_name > /var/lib/samba/usershares/share_name
+	To get the SID of the a group use to use in /var/lib/samba/usershares/share_name in usershare_acl:
+		wbinfo -n "WORKGROUP\Everyone"
+		wbinfo -n "WORKGROUP\shah"
 net usershare delete share_name
 net usershare info
 net usershare list

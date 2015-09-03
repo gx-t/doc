@@ -11,7 +11,7 @@ sudo make install
 sudo ldconfig
 sudo rmmod dvb_usb_rtl28xxu rtl2832
 Play 105.5 Mhz (mono)
-sudo rtl_fm -f 105.5M -M fm -s 170k -o 4 -A fast -r 32k -l 0 -E deemp -s 200000 -r 38k - | play -r 38k -t raw -e s -b 16 -c 1 -V1 -
+sudo rtl_fm -f 105.5M -M fm -s 170k -o 4 -A fast -r 38k -l 0 -E deemp -s 200000 -r 38k - | play -r 38k -t raw -e s -b 16 -c 1 -V1 -
 http://kmkeen.com/rtl-demod-guide/
 http://www.linuxtv.org/wiki/index.php/Testing_your_DVB_device
 

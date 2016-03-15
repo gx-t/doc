@@ -7,9 +7,16 @@ avconv -i input.ts -map 0:0 -c:v libx264 -map 0:1 -c:a copy -map 0:2 -c:a copy -
 == JPEGs to video:
 avconv -i "/tmp/%08d.jpeg" -s 1920x1080 -c:v libx264 out.mkv
 
-== Multiple mp4s to single 30fps:
+== Multiple mp4s to single 30fps
 ls -tr /tmp/*.MP4 | while read ff; do avconv -i "$ff" -s 1280x720 -vcodec rawvideo -r 30 -f avi -; done | avconv -i - out.mkv
 
 == Copy length from position
 avconv -i input.mkv -ss $(( $(date +%s -d 1:53:42) - $(date +%s -d 00:00:00) )) -acodec copy -vcodec copy -f matroska - | avconv -i - -t $(( $(date +%s -d 2:12:54) - $(date +%s -d 1:53:42) )) -acodec copy -vcodec copy -y .test2.mkv
+
+== List available codecs
+avconv -codecs
+
+== Video DVD compatible output
+avconv -i input -target pal-dvd output.mpeg
+avconv -i input -target ntsc-dvd output.mpeg
 

@@ -1,8 +1,12 @@
 Capturing Wireless LAN Packets in Monitor Mode with iw:
 https://sandilands.info/sgordon/capturing-wifi-in-monitor-mode-with-iw
 
-Complete example code showing how to construct a UDP packet from scratch and inject it on a WiFi interface in Linux:
-https://gist.github.com/jonhoo/7780260
+Peer to peer chat-program that sends data over Wi-Fi without associations
+https://github.com/vdloo/Beacontalk
 
 Using libpcap in C
 http://www.devdungeon.com/content/using-libpcap-c
+
+Complete example code showing how to construct a UDP packet from scratch and inject it on a WiFi interface in Linux:
+https://gist.github.com/jonhoo/7780260
+

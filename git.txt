@@ -1,3 +1,5 @@
+http://www.alexkras.com/19-git-tips-for-everyday-use/
+
 ==== COMMIT
 git commit --amend
 

@@ -1,4 +1,5 @@
 http://www.alexkras.com/19-git-tips-for-everyday-use/
+https://ariejan.net/2010/06/10/cherry-picking-specific-commits-from-another-branch/
 
 ==== COMMIT
 git commit --amend

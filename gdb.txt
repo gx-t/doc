@@ -1,0 +1,12 @@
+start - run with temporary breakpoint on main
+ctrl+x a - switch to UI
+ctrl+l - redraw UI
+ctrl+x 2 - disassembly, register, source - switch diffenert window combinations
+tui reg xxx - show registry group
+ctrl+p - previous command (usefull when in TUI mode)
+target record-full, reverse-next [,...]
+record - start recording for reverse run
+python <command> (many internal objects: gdb.reakpoints(), 
+command <BP number>, type what to do (i.e 'record')
+p $pc
+

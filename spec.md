@@ -25,13 +25,14 @@
 ```
 * All connections are permanent, bidirectional
 * Protocol is based on encrypted structured binary data exchange
-* All data exchange is secure, encrypted using one time session key
+* All data exchange is secure, encrypted, using one time session key
 * Connection is initiated by client board
-* Each board is server and client at the same time and can be a node between levels
+* Each board is server and client at the same time and can take the role of a node between levels
 * Each board has fixed number (256) of server processes and single client process
 * Each data block consists of command and following data
 * Command list is extendable
 * Data block may contain several commands and data, commands may be chained in more complex action
+* The reponse is encrypted with same session key
 
 ## Protocol Layers
 ```
@@ -103,4 +104,17 @@
 ###  Board Key Table
 Every board and server has sqlite database with preinstalled key table of 32 bytes (256 bits) length AES keys identified by 1 byte key id.
 
+##  Board structure
+Board may have several sensor or servo chips on it. Board also may transparently retransmit the information received from other boards.
 
+### Sensor/servo chips
+* Different type of chips may be connected to board using standard protocols: I2C, SPI, 1-Wire.
+* Each chip has configuration text file with protocol specific information (address, etc).
+* "Driver" part of the software analyzes all found configuration files and initialzes sensors/servos.
+* "Driver" scans all sensor chips and detects measured value changes, error cases and sends to collector.
+* Server processes receive information from other boards and send to collector appending own path to received data path.
+* Collector periodically sends collected information to upped level server using network client.
+* To avoid colissions between sensor scanning and servo command processes, flock synchronization is used for each device file (/dev/i2c-0, etc.)
+
+### Data collector
+### Network agent

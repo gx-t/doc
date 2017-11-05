@@ -29,10 +29,61 @@
 * Connection is initiated by client board
 * Each board is server and client at the same time and can be a node between levels
 * Each board has fixed number (256) of server processes and single client process
+* Each data block consists of command and following data
+* Command list is extendable
+* Data block may contain several commands and data, commands may be chained in more complex action
 
-##  Board Key Table
-Every board has sqlite database with preinstalled key table of 32 bytes (256 bits) length 256 AES keys identified by 1 byte key id.
-## Secure Data Exchange Protocol
+## Protocol Layers
+```
++------------------+
+|  COMMAND LAYER   |
++------------------+
+|  SECURITY LAYER  |
++------------------+
+|  TCP             |
++------------------+
+```
+
+### Command Layer
+
+```
++--------------------+
+| OP CODE (Command)  |
++--------------------+
+| DATA               |
++--------------------+
+| ...                |
+| ...                |
+| ...                |
++--------------------+
+| OP CODE (Command)  |
++--------------------+
+| DATA               |
++--------------------+
+```
+
+### Security Layer
+* Request
+```
++-----------------------------+
+|  KEY ID                     |
++-----------------------------+
+|  RANDOM DIVERSIFIER         |
++-----------------------------+
+|  DATA HASH (ECRYPTED)       |
++-----------------------------+
+|  DATA (ENCRYPTED)           |
++-----------------------------+
+```
+* Response
+```
++-----------------------+
+| ERROR CODE            |
++-----------------------+
+| EXTRA DATA (optional) |
++-----------------------+
+```
+### Secure Data Exchange Protocol
 1.  Client randomly selects key from key DB.
 2.  Client generates 32 bytes length random diversifier.
 3.  Client generates 32 bytes length session key based on selected key and diversifier.
@@ -48,3 +99,8 @@ Every board has sqlite database with preinstalled key table of 32 bytes (256 bit
 13. Server decrypts received hash.
 14. Server compares calculated hash with decrypted one
 15. Server sends response code
+
+###  Board Key Table
+Every board and server has sqlite database with preinstalled key table of 32 bytes (256 bits) length AES keys identified by 1 byte key id.
+
+

@@ -8,6 +8,7 @@ digraph G {
 
   node [shape=box,width=0.2,height=0.2,fontname=Courier,fontsize=10.0,penwidth=0.5];
   rankdir=TB;
+  "Get Datagram from UDP Socket" [peripheries = 2]
   "Get Datagram from UDP Socket"->"Extract Key ID\nFrom Datagram"->"Get AES Key\nFrom Key Table\n(SQLite DB)"->"Derive Session Key"
   "Get Datagram from UDP Socket"->"Extract Diversifier\nFrom Datagram"->"Derive Session Key"
   "Get Datagram from UDP Socket"->"Extract Data Hash\nFrom Datagram"->"Verify Data\n(Compare Hases}"

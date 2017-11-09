@@ -9,6 +9,7 @@ digraph G {
   node [shape=box,width=0.2,height=0.2,fontname=Courier,fontsize=10.0,penwidth=0.5];
   rankdir=TB;
   
+  "Get Data" [peripheries = 2]
   "Get Data"->"Calculate Data Hash\n(SHA256)"->"Encrypt (AES256) Data Hash\nUsing Session Key"
   "Get Data"->"Encrypt (AES256) Data\nUsing Session Key"
   "Generate Random Key ID"->"Select Key (AES256)\nFrom Key DB (SQLite"->"Derive Session Key"

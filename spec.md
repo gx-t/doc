@@ -1,5 +1,5 @@
 ### Overview
-* Boards are conneted in homomorph hierarchy using proprietary protocol over TCP
+* Boards are conneted in homomorph hierarchy using proprietary protocol over UDP
 ```
                                           +--------+
                                           | Server |
@@ -118,3 +118,5 @@ Board may have several sensor or servo chips on it. Board also may transparently
 
 ### Data collector
 ### Network agent
+
+

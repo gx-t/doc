@@ -1,0 +1,17 @@
+digraph G {
+  graph [fontname=Courier,fontsize=10.0,labeljust=l,nojustify=true];
+
+  labelloc="t";
+
+  label="Data Decryption Procedure\n\n";
+  fontsize=18;
+
+  node [shape=box,width=0.2,height=0.2,fontname=Courier,fontsize=10.0,penwidth=0.5];
+  rankdir=TB;
+  "Get Datagram from UDP Socket"->"Extract Key ID\nFrom Datagram"->"Get AES Key\nFrom Key Table\n(SQLite DB)"->"Derive Session Key"
+  "Get Datagram from UDP Socket"->"Extract Diversifier\nFrom Datagram"->"Derive Session Key"
+  "Get Datagram from UDP Socket"->"Extract Data Hash\nFrom Datagram"->"Verify Data\n(Compare Hases}"
+  "Get Datagram from UDP Socket"->"Extract Cryptogram\nFrom Datagram"->"Decrypt (AES256) Data\nUsing Session Key"
+  "Derive Session Key"->"Decrypt (AES256) Data\nUsing Session Key"->"Calculate Hash\n(SHA256)"->"Verify Data\n(Compare Hashes}"
+
+}

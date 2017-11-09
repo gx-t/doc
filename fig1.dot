@@ -1,0 +1,18 @@
+digraph G {
+  graph [fontname=Courier,fontsize=10.0,labeljust=l,nojustify=true];
+
+  node [shape=box,width=0.2,height=0.2,fontname=Courier,fontsize=10.0,penwidth=0.5];
+ 
+  labelloc="t";
+
+  label="Data flow: chip to server\n\n";
+  fontsize=18;
+  rankdir=BT;
+
+  "Chip" -> "Driver\nContains all chip-specific code" [label="Chip specific binary data"];
+  "Config" -> "Driver\nContains all chip-specific code" [label="Chip specific configuration"];
+  "Driver\nContains all chip-specific code"-> "Collector\n(SQLite DB)" [label="Unified data structure"];
+  "Collector\n(SQLite DB)" -> "Encryption"->"UDP Client"->"UDP Server"->"Decryption"->"Server Collector"
+}
+
+

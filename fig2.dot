@@ -1,0 +1,22 @@
+digraph G {
+  graph [fontname=Courier,fontsize=10.0,labeljust=l,nojustify=true];
+
+  labelloc="t";
+
+  label="Data Encryption Procedure\n\n";
+  fontsize=18;
+
+  node [shape=box,width=0.2,height=0.2,fontname=Courier,fontsize=10.0,penwidth=0.5];
+  rankdir=TB;
+  
+  "Get Data"->"Calculate Data Hash\n(SHA256)"->"Encrypt (AES256) Data Hash\nUsing Session Key"
+  "Get Data"->"Encrypt (AES256) Data\nUsing Session Key"
+  "Generate Random Key ID"->"Select Key (AES256)\nFrom Key DB (SQLite"->"Derive Session Key"
+  "Derive Session Key"->"Encrypt (AES256) Data Hash\nUsing Session Key"
+  "Generate\nRandon Diversifier" -> "Derive Session Key"->"Encrypt (AES256) Data\nUsing Session Key"
+  
+  "Generate Random Key ID"->"Pack The Datagram"
+  "Generate\nRandon Diversifier"->"Pack The Datagram"
+  "Encrypt (AES256) Data\nUsing Session Key"->"Pack The Datagram"
+  "Encrypt (AES256) Data Hash\nUsing Session Key"->"Pack The Datagram"
+}

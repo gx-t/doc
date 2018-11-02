@@ -24,6 +24,7 @@ https://github.com/nothings/stb
 VoCore1 Kermit Firmware
 http://vonger.cn/?p=780
 http://www.columbia.edu/kermit/ckututor.html
+https://downloads.openwrt.org/chaos_calmer/15.05/ramips/rt305x/openwrt-15.05-ramips-rt305x-vocore-squashfs-sysupgrade.bin
 
 OpenWRT VoCore network configuration
 https://wiki.openwrt.org/doc/uci/network

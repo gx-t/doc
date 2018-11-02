@@ -28,3 +28,7 @@ http://www.columbia.edu/kermit/ckututor.html
 OpenWRT VoCore network configuration
 https://wiki.openwrt.org/doc/uci/network
 
+NanoPi M4, RK3399, FriendlyARM
+http://wiki.friendlyarm.com/wiki/index.php/NanoPi_M4
+
+

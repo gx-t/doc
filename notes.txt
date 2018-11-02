@@ -1,0 +1,30 @@
+http://hdrezka.ag/films/drama/14644-svet-v-okeane.html 
+
+Serial terminal for ChromeOS:
+https://chrome.google.com/webstore/detail/beagle-term/gkdofhllgfohlddimiiildbgoggdpoea?hl=en
+
+AVR I2C ATMEGA16 LM75:
+https://www.avrfreaks.net/forum/atmega16-twi-and-lm75
+
+Making 27.23TB of research data available!
+http://academictorrents.com/
+
+Մեքենայի տեխ․ զննում
+https://www.e-payments.am/hy/car_inspection/
+
+Chrome SDR 3D visualisation
+https://github.com/ttrftech/threejs-spectrum
+
+Տպելու համար հարմար, սև ու սպիտակ և այլ գունային երանգների քարտեզ
+https://snazzymaps.com/style/4069/navigation
+
+Single File Libraries
+https://github.com/nothings/stb
+
+VoCore1 Kermit Firmware
+http://vonger.cn/?p=780
+http://www.columbia.edu/kermit/ckututor.html
+
+OpenWRT VoCore network configuration
+https://wiki.openwrt.org/doc/uci/network
+

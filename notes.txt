@@ -32,4 +32,8 @@ https://wiki.openwrt.org/doc/uci/network
 NanoPi M4, RK3399, FriendlyARM
 http://wiki.friendlyarm.com/wiki/index.php/NanoPi_M4
 
+ESP32 compiler for ARM (RPI)
+http://www.neilkolban.com/esp32/downloads/xtensa-esp32-elf.tar.gz
+for x86
+https://dl.espressif.com/dl/xtensa-esp32-elf-linux32-1.22.0-59.tar.gz
 

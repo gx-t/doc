@@ -37,8 +37,10 @@ http://www.neilkolban.com/esp32/downloads/xtensa-esp32-elf.tar.gz
 for x86
 https://dl.espressif.com/dl/xtensa-esp32-elf-linux32-1.22.0-59.tar.gz
 
-ESP32 ESP8266 Espruino
+ESP32/ESP8266 Espruino
 http://www.espruino.com/Download
 http://www.espruino.com/files/espruino_2v00.zip
 
+ESP32/ESP8266 Espruino flashing instructions
+https://www.espruino.com/ESP8266_Flashing?print
 

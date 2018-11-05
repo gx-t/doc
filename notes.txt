@@ -42,7 +42,7 @@ http://www.espruino.com/Download
 https://www.espruino.com/binaries/espruino_2v00_esp8266/
 
 ESP32/ESP8266 Espruino flashing instructions
-https://www.espruino.com/ESP8266_Flashing?print
+https://www.espruino.com/ESP8266_Flashing
 
 esptool.py
 https://github.com/themadinventor/esptool.git

@@ -1,5 +1,3 @@
-http://hdrezka.ag/films/drama/14644-svet-v-okeane.html 
-
 Serial terminal for ChromeOS:
 https://chrome.google.com/webstore/detail/beagle-term/gkdofhllgfohlddimiiildbgoggdpoea?hl=en
 
@@ -46,4 +44,7 @@ https://www.espruino.com/ESP8266_Flashing
 
 esptool.py
 https://github.com/themadinventor/esptool.git
+
+Aliexpress, Water Pump, 12V, Brushless
+https://www.aliexpress.com/item/Ultra-quiet-DC-12V-4-2W-240L-H-Flow-Rate-Waterproof-Brushless-Pump-Mini-Submersible-Water/32792939616.html?src=criteo&albslr=205652906&isdl=y&aff_short_key=UneMJZVf&src=criteo&albch=remarketing&acnt=US&isdl=y&aff_short_key=UneMJZVf&albcp=lowerfunnel&device=pc&aff_platform=criteo&clickid=5be149ef1c89ba175acb9ca5dd2bfe00_1541491183_32792939616
 

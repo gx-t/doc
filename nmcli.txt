@@ -1,0 +1,9 @@
+Network Monitor Command Line - nmcli
+
+sudo nmcli device wifi list
+sudo nmcli device wifi list --rescan yes
+Connect and save one more:
+sudo nmcli device wifi connect "SSID" password "your_password"
+Priority:
+sudo nmcli connection modify "SSID" connection.autoconnect-priority <value>
+

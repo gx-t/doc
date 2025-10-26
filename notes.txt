@@ -59,3 +59,8 @@ https://www.textise.net/showText.aspx?strURL=<URL>
 http://appa.am/
 https://aswa.am/
 
+Single file C/C++ libraries
+https://github.com/nothings/stb
+
+Tiny PNG Output
+https://www.nayuki.io/page/tiny-png-output

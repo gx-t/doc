@@ -1,23 +1,35 @@
 Youtube music video with chapters - split chapters, extract audio, make mp3
-yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --split-chapters -o "%(title)s.%(ext)s" 'https://www.youtube.com/watch?v=OikdPPS5VUU'
+
+yt-dlp \
+        -f bestaudio \
+        --extract-audio \
+        --audio-format mp3 \
+        --audio-quality 0 \
+        --split-chapters \
+        -o "%(title)s.%(ext)s" \
+        'https://www.youtube.com/watch?v=OikdPPS5VUU'
 
 Youtube playlist - download playlist, best video, best audio, numbered files
-yt-dlp -f bestvideo+bestaudio -o "%(playlist_index)02d - %(title)s.%(ext)s" 'https://www.youtube.com/playlist?list=PLYElE_rzEw_uryBrrzu2E626MY4zoXvx2'
+
+yt-dlp \
+        -f bestvideo+bestaudio \
+        -o "%(playlist_index)02d - %(title)s.%(ext)s" \
+        'https://www.youtube.com/playlist?list=PLYElE_rzEw_uryBrrzu2E626MY4zoXvx2'
 
 Youtube channel - download all videos from channel, use —download-archive to avoid redownloading what was already downloaded. Do not delete “downloaded.txt”! It contains information about downloaded videos. Later, when new videos arrive to the channel, it will prevent downloading already downloaded ones.
 
 yt-dlp \
-  --playlist-reverse \
-  --download-archive "downloaded.txt" \
-  -f bestvideo+bestaudio \
-  -o "%(uploader)s/%(upload_date)s - %(title).80s.%(ext)s" \
-  https://www.youtube.com/@FesZElectronics
+        --playlist-reverse \
+        --download-archive "downloaded.txt" \
+        -f bestvideo+bestaudio \
+        -o "%(uploader)s/%(upload_date)s - %(title).80s.%(ext)s" \
+        https://www.youtube.com/@FesZElectronics
 
 The same for another channel:
 
 yt-dlp \
-  --playlist-reverse \
-  --download-archive "downloaded.txt" \
-  -f bestvideo+bestaudio \
-  -o "%(uploader)s/%(upload_date)s - %(title).80s.%(ext)s" \
-  https://www.youtube.com/@Frankslaboratory
+        --playlist-reverse \
+        --download-archive "downloaded.txt" \
+        -f bestvideo+bestaudio \
+        -o "%(uploader)s/%(upload_date)s - %(title).80s.%(ext)s" \
+        https://www.youtube.com/@Frankslaboratory

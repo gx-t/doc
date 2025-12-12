@@ -4,6 +4,9 @@ https://chrome.google.com/webstore/detail/beagle-term/gkdofhllgfohlddimiiildbgog
 AVR I2C ATMEGA16 LM75:
 https://www.avrfreaks.net/forum/atmega16-twi-and-lm75
 
+AVR® Fuse Calculator
+https://www.engbedded.com/fusecalc/
+
 Making 27.23TB of research data available!
 http://academictorrents.com/
 
@@ -71,4 +74,14 @@ https://muff.kiev.ua/files/books/OS_UNIX_RUS.pdf
 RockChip RK33xx based hackable game console running Linux (ArkOS) from MicroSD. Hackable.
 https://r36shandheld.com/
 https://github.com/luizferreira-io/r36s-input-demo
+
+Подшивка журналов | Радио (Радиолюбитель, Радио всем, Радиофронт) (1924-2025) [PDF, DJVU] [Обновляемая]
+https://nnmclub.to/forum/viewtopic.php?t=1076378
+
+FM receivers wolrdwide
+https://servers.fmdx.org
+
+Tracking:
+https://parcelsapp.com/en/tracking/
+https://www.17track.net/en
 

@@ -70,3 +70,5 @@ https://muff.kiev.ua/files/books/OS_UNIX_RUS.pdf
 
 RockChip RK33xx based hackable game console running Linux (ArkOS) from MicroSD. Hackable.
 https://r36shandheld.com/
+https://github.com/luizferreira-io/r36s-input-demo
+

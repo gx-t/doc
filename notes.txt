@@ -64,3 +64,9 @@ https://github.com/nothings/stb
 
 Tiny PNG Output
 https://www.nayuki.io/page/tiny-png-output
+
+Операционная система UNIX®. % СПб.: 2002. % 528 ил. Робачевский А. М.
+https://muff.kiev.ua/files/books/OS_UNIX_RUS.pdf
+
+RockChip RK33xx based hackable game console running Linux (ArkOS) from MicroSD. Hackable.
+https://r36shandheld.com/

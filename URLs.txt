@@ -19,7 +19,7 @@ https://github.com/ttrftech/threejs-spectrum
 Տպելու համար հարմար, սև ու սպիտակ և այլ գունային երանգների քարտեզ
 https://snazzymaps.com/style/4069/navigation
 
-Single File Libraries
+Single File Libraries including PNG, JPEG read/write, ogg decode
 https://github.com/nothings/stb
 
 VoCore1 Kermit Firmware
@@ -87,4 +87,8 @@ https://www.17track.net/en
 
 Graphics, 3D, Raytracing, Theory, Examples, C/C++, Books
 https://www.scratchapixel.com/index.html
+
+Shaders:
+Shaders book + online playground:
+https://thebookofshaders.com
 

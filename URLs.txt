@@ -92,5 +92,5 @@ Shaders:
 Shaders book + online playground:
 https://thebookofshaders.com
 
-Power plants, grid
+Open Infrastructure Map: Power, Telecom, Pipes, Water
 https://openinframap.org/#7.6/39.822/44.556
